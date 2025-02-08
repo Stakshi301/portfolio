@@ -10,7 +10,9 @@ import stakshi from "../assets/stakshi.jpg";
 import AboutDrawer from "./AboutDrawer";
 
 const Intro = () => {
+  
   const [isDrawerOpen, setDrawerOpen] = useState(false);
+  // console.log("isDrawerOpen:", isDrawerOpen);
 
   const handleOpenDrawer = () => setDrawerOpen(true);
   const handleCloseDrawer = () => setDrawerOpen(false);
@@ -18,7 +20,7 @@ const Intro = () => {
   return (
     <>
      <div
-  className={`introContainer flex flex-col md:mx-auto lg:flex-row px-4 sm:px-8 lg:px-10 mt-5 gap-8 ${
+  className={`introContainer container mx-auto flex flex-col lg:flex-row px-4 sm:px-8 lg:px-10 mt-5 gap-8 ${
     isDrawerOpen ? "hidden md:hidden  sm:hidden lg:flex" : "flex"
   }`}
 >
@@ -45,11 +47,12 @@ const Intro = () => {
 
 
 <div
-  className={`icons lg:flex lg:flex-col lg:gap-12 text-right md:pl-0 ${
-    isDrawerOpen ? "lg:hidden" : "flex"
-  }sm:flex sm:flex-row sm:justify-center sm:items-center sm:gap-6 lg:absolute lg:right-0 lg:mr-12 
-  }`}
-> 
+  className={`icons  
+    sm: !flex sm:gap-6 
+    md:flex md:justify-center 
+    ${isDrawerOpen ? "hidden lg:!hidden" : "lg:flex lg:flex-col lg:gap-12 lg:text-right lg:pl-80"}`}
+>
+
           <a href="https://github.com/Stakshi301">
             <AiFillGithub className="h-8 w-8 sm:h-9 sm:w-9 text-blue-200" />
           </a>
@@ -135,6 +138,8 @@ const Intro = () => {
           </div>
         </div>
       </AboutDrawer>
+    
+
     </>
   );
 };
