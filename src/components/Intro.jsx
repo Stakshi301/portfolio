@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useRef } from "react";
+import { AiOutlineFileText } from "react-icons/ai";
 import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
 import { SiLeetcode } from "react-icons/si";
 import { RiCodeSSlashFill } from "react-icons/ri";
@@ -8,9 +10,18 @@ import { GrReactjs } from "react-icons/gr";
 import { FaNodeJs } from "react-icons/fa";
 import stakshi from "../assets/stakshi.jpg";
 import AboutDrawer from "./AboutDrawer";
+import ScrollIndicator from "./ScrollIndicator";
+import Projects from "./Projects";
+
 
 const Intro = () => {
   
+  const projectsRef = useRef(null);
+
+  const handleScrollDown = () => {
+    projectsRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   const [isDrawerOpen, setDrawerOpen] = useState(false);
   // console.log("isDrawerOpen:", isDrawerOpen);
 
@@ -20,7 +31,7 @@ const Intro = () => {
   return (
     <>
      <div
-  className={`introContainer container mx-auto flex flex-col lg:flex-row px-4 sm:px-8 lg:px-10 mt-5 gap-8 ${
+  className={`introContainer container mx-auto flex flex-col lg:flex-row mt-5 gap-8 ${
     isDrawerOpen ? "hidden md:hidden  sm:hidden lg:flex" : "flex"
   }`}
 >
@@ -30,7 +41,7 @@ const Intro = () => {
     Stakshi Semwal
   </h1>
   <button
-    className="aboutMe w-28 bg-blue-400 mt-4 p-2 text-sm sm:text-base rounded-md bg-gradient-to-r from-blue-300 to-blue-600 hover:from-blue-600 hover:to-blue-300 mx-auto"
+    className="aboutMe w-28 bg-blue-400 mt-4 p-2 text-sm sm:text-base rounded-md bg-gradient-to-r from-blue-300 to-blue-600 hover:from-blue-600 hover:to-blue-300 mx-4"
     onClick={handleOpenDrawer}
   >
     About Me
@@ -48,10 +59,15 @@ const Intro = () => {
 
 <div
   className={`icons  
-    sm: !flex sm:gap-6 
+    flex justify-center gap-6 
     md:flex md:justify-center 
-    ${isDrawerOpen ? "hidden lg:!hidden" : "lg:flex lg:flex-col lg:gap-12 lg:text-right lg:pl-80"}`}
+    ${isDrawerOpen ? "hidden lg:!hidden" : "lg:flex lg:flex-col lg:gap-12 lg:justify-end lg:items-end lg:absolute lg:right-5"}`}
 >
+
+         <a href="/resume.pdf" 
+          download="Stakshi_Resume.pdf">
+          <AiOutlineFileText className="h-8 w-8 sm:h-9 sm:w-9 text-blue-200"/>
+        </a>
 
           <a href="https://github.com/Stakshi301">
             <AiFillGithub className="h-8 w-8 sm:h-9 sm:w-9 text-blue-200" />
@@ -71,13 +87,18 @@ const Intro = () => {
         </div>
       </div>
 
-      {/* Know More Button */}
-      <div className="flex justify-center mt-5">
-        <button className={`knowMore lg:ml-2 w-28 bg-blue-400 p-2 text-sm sm:text-base bg-gradient-to-r from-blue-300 to-blue-600 hover:from-blue-600 hover:to-blue-300 rounded-lg
-          ${isDrawerOpen ? "md:hidden sm:hidden lg:flex" : "flex"}`}>
-          Know More
-        </button>
+
+
+<div className="flex justify-center mt-10">
+          <ScrollIndicator onClick={handleScrollDown} />
+        </div>
+     
+
+      {/* Target Section to Scroll Down To */}
+      <div ref={projectsRef}>
+        <Projects />
       </div>
+{/* <ScrollIndicator/> */}
 
      
       <AboutDrawer  isOpen={isDrawerOpen} onClose={handleCloseDrawer}   className={`${isDrawerOpen ? "md:mt-20" : ""}`}
