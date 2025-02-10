@@ -1,9 +1,10 @@
 import { useRef, useState } from "react";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import { BiMessageSquareDetail } from "react-icons/bi";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsPerson } from "react-icons/bs";
-import connect from 
+import connect from "../assets/connect.svg"
+
 function ContactMe() {
   const form = useRef();
   const [isSent, setIsSent] = useState(false);
@@ -12,15 +13,15 @@ function ContactMe() {
     e.preventDefault();
 
     emailjs.sendForm(
-      "YOUR_SERVICE_ID",   // Replace with your EmailJS Service ID
-      "YOUR_TEMPLATE_ID",  // Replace with your EmailJS Template ID
+      "service_ocyzb5s",   
+      "template_2cqqpqh",  
       form.current,
-      "YOUR_PUBLIC_KEY"    // Replace with your EmailJS Public Key
+      "4iVybjWHDe4yVjy8E"    
     ).then(
       (result) => {
         console.log("Success:", result.text);
-        setIsSent(true);  // ✅ Show success message
-        e.target.reset();  // ✅ Clear form after submission
+        setIsSent(true);  
+        e.target.reset();  
       },
       (error) => {
         console.log("Error:", error.text);
@@ -36,7 +37,7 @@ function ContactMe() {
         
         {/* Left Side - Image */}
         <div className="flex-1 flex justify-center">
-          <img src={contact} alt="Contact Me" className="w-full max-w-sm" />
+          <img src={connect} alt="Contact Me" className="w-full max-w-sm" />
         </div>
 
         {/* Right Side - Contact Form */}
