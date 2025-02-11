@@ -107,18 +107,18 @@ const Intro = () => {
 {/* <ScrollIndicator/> */}
 
      
-      <AboutDrawer  isOpen={isDrawerOpen} onClose={handleCloseDrawer}   className={`${isDrawerOpen ? "md:mt-20" : ""}`}
+      <AboutDrawer isOpen={isDrawerOpen} onClose={handleCloseDrawer}   className={`${isDrawerOpen ? "md:mt-20" : ""}`}
       >
         <h3 className="text-center text-teal-500 text-2xl sm:text-3xl lg:text-4xl">
           About Me
         </h3>
-        <p className="mt-4 text-gray-500 text-sm sm:text-base text-justify">
+        <p className="mt-4 lg:text-gray-500 text-sm sm:text-base md:text-gray-400  text-justify">
           Hello! My name is Stakshi Semwal. I am a passionate web developer. I
           enjoy building interactive, user-friendly, and responsive web
           applications. Technologies and tools that I use to create such
           awesome websites.
         </p>
-        <ul className="languages flex flex-wrap justify-center lg:justify-start pt-1 mt-2">
+        <ul className="languages flex flex-wrap justify-center lg:justify-start pt-1 mt-2 md:text-gray-200">
           {[
             "#html",
             "#css",
@@ -142,7 +142,7 @@ const Intro = () => {
             </li>
           ))}
         </ul>
-        <h3 className="text-teal-500 pt-5 text-2xl sm:text-3xl text-center">
+        <h3 className="text-teal-500 pt-5 text-2xl sm:text-3xl  text-center">
           MERN STACK
         </h3>
 
