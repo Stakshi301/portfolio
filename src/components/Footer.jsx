@@ -12,11 +12,12 @@ function Footer() {
   className={`icons gap-4
     flex justify-center lg:items-end absolute right-5"}`}
 >
-        <a href="/resume.pdf" // Change this to your actual resume file path
-          download="Stakshi_Resume.pdf" // Name of the downloaded file
+        <a href="./Stakshi_Resume.pdf" 
+          download="Stakshi_Resume.pdf" 
           className="text-xl text-blue-200 hover:text-blue-400">
           <AiOutlineFileText />
         </a>
+                
           <a href="https://github.com/Stakshi301">
             <AiFillGithub className="text-xl text-blue-200" />
           </a>

@@ -42,12 +42,12 @@ const Certificate = () => {
     <div className="flex items-center justify-center gap-5">
       <button
         onClick={prevCertificate}
-        className="absolute left-0 bg-blue-500 text-white text-3xl px-4 py-2 rounded-full hover:bg-blue-600 transition"
+        className="swipeLeftButton absolute left-0 bg-blue-500 text-white text-3xl px-4 py-2 rounded-full hover:bg-blue-600 transition"
       >
         ❮
       </button>
 
-      <div className="w-[30rem] h-80 border-4 border-gray-300 rounded-lg shadow-lg flex items-center justify-center overflow-hidden">
+      <div className="certificates w-[30rem] h-80 border-4 border-gray-300 rounded-lg shadow-lg flex items-center justify-center overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.img
               key={index}
@@ -63,7 +63,7 @@ const Certificate = () => {
         </div>
       <button
         onClick={nextCertificate}
-        className="absolute right-0 bg-blue-500 text-white text-3xl px-4 py-2 rounded-full hover:bg-blue-600 transition"
+        className="swipeRightButton absolute right-0 bg-blue-500 text-white text-3xl px-4 py-2 rounded-full hover:bg-blue-600 transition"
       >
         ❯
       </button>

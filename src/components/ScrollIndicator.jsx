@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import "../index.css"
 
 const ScrollIndicator = ({ onClick }) => {
   return (
@@ -7,7 +8,7 @@ const ScrollIndicator = ({ onClick }) => {
       whileTap={{ scale: 0.9 }}
       animate={{ y: [0, 10, 0] }} 
       transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }} 
-      className="w-12 flex items-center justify-center rounded-full bg-gradient-to-r from-blue-300 to-blue-600 hover:from-blue-600 hover:to-blue-300 cursor-pointer absolute mb-16"
+      className="scrollIndicator w-12 flex items-center justify-center rounded-full bg-gradient-to-r from-blue-300 to-blue-600 hover:from-blue-600 hover:to-blue-300 cursor-pointer absolute mb-16"
       onClick={onClick}
     >
       <svg

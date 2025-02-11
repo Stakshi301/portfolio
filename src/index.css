@@ -7,3 +7,34 @@
 :root{
   font-family: "Inter", sans-serif;
 }
+
+@media (max-width: 640px) {
+  .imageContainer {
+margin-left: 0px;
+padding-bottom: 5px;
+}
+.scrollIndicator{
+  display: none;
+}
+.swipeLeftButton{
+padding:2px 8px;
+top:100px;
+left: 10px;
+}
+.swipeRightButton{
+  padding:2px 8px;
+  top:100px;
+  right: 10px;
+}
+.certificates{
+  width: 100%;
+  height: 10%;
+}
+}
+
+@media (max-width:768px){
+  .drawerContainer{
+    background-color: red;
+    height: 50%;
+  }
+}

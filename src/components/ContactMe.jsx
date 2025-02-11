@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { BiMessageSquareDetail } from "react-icons/bi";
 import { HiOutlineMail } from "react-icons/hi";
@@ -31,16 +32,32 @@ function ContactMe() {
 
   return (
     <div className="container mx-auto max-w-4xl p-6">
-      <h1 className="text-3xl font-bold text-blue-400 text-center mb-6">Lets Connect</h1>
-
+<div className="flex justify-center items-center">
+      <motion.h1
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 5.8, ease: "easeInOut" }}
+        className="text-3xl font-bold text-blue-400"
+      >
+        Let's
+      </motion.h1>
+      <motion.h1
+        initial={{ x: 100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 5.8, ease: "easeInOut" }}
+        className="text-3xl font-bold text-blue-400 ml-2"
+      >
+        Connect
+      </motion.h1>
+    </div>
       <div className="text-white rounded-lg shadow-lg flex flex-col lg:flex-row items-center gap-8 p-6">
         
-        {/* Left Side - Image */}
+        {/* Left Side Image */}
         <div className="flex-1 flex justify-center">
           <img src={connect} alt="Contact Me" className="w-full max-w-sm" />
         </div>
 
-        {/* Right Side - Contact Form */}
+        {/* Right Side Contact Form */}
         <div className="flex-1">
           <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
             

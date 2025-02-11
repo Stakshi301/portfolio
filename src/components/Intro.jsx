@@ -12,6 +12,7 @@ import stakshi from "../assets/stakshi.jpg";
 import AboutDrawer from "./AboutDrawer";
 import ScrollIndicator from "./ScrollIndicator";
 import Projects from "./Projects";
+import '../index.css'
 
 
 const Intro = () => {
@@ -32,7 +33,7 @@ const Intro = () => {
     <>
      <div
   className={`introContainer container mx-auto flex flex-col lg:flex-row mt-5 gap-8 ${
-    isDrawerOpen ? "hidden md:hidden  sm:hidden lg:flex" : "flex"
+    isDrawerOpen ? "lg:flex" : "flex"
   }`}
 >
      
@@ -48,13 +49,18 @@ const Intro = () => {
   </button>
 </div>
 
-<div className="image relative flex justify-center items-center">
-  <img
-    src={stakshi}
-    className="h-36 w-30 sm:h-40 sm:w-20 md:h-60 md:w-40 lg:h-[430px] lg:w-64 rounded-full"
-  />
-  <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-50 rounded-full"></div>
+
+<div className="imageContainer relative flex justify-center items-center md:ml-0 pb-28 lg:ml-[45px] mt-[25px]">
+  <div className="relative">
+    <img
+      src={stakshi}
+      className=" image h-64 w-64 rounded-full object-cover object-top"
+    />
+    <div className="absolute inset-0 bg-black opacity-50 rounded-full"></div>
+  </div>
 </div>
+
+
 
 
 <div
@@ -64,7 +70,7 @@ const Intro = () => {
     ${isDrawerOpen ? "hidden lg:!hidden" : "lg:flex lg:flex-col lg:gap-12 lg:justify-end lg:items-end lg:absolute lg:right-5"}`}
 >
 
-         <a href="/resume.pdf" 
+         <a href="./Stakshi_Resume.pdf" 
           download="Stakshi_Resume.pdf">
           <AiOutlineFileText className="h-8 w-8 sm:h-9 sm:w-9 text-blue-200"/>
         </a>
