@@ -2,6 +2,10 @@
 import { motion } from "framer-motion";
 import miranda from "../assets/miranda.png"
 import veganMart from "../assets/veganMart.png"
+import blinkit from "../assets/blinkit.png"
+import netflix from "../assets/netflix.png"
+import pixo from "../assets/pixo.png"
+
 
 const projects = [
   {
@@ -17,17 +21,17 @@ const projects = [
     link: "https://stakshi301.github.io/miranda/",
   },
   {
-    name: "Vegan Mart",
-    description: "An e-commerce platform for vegan products.",
-    image: veganMart, 
-    link: "https://stakshi301.github.io/veganMart/", 
+    name: "Pixo",
+    description: "A Pinterest inspired app.",
+    image: pixo, 
+    link: "https://pixo-oppmhdugl-stakshis-projects.vercel.app/", 
   },
-  {
-    name: "Miranda Website",
-    description: "A beautifully designed webpage of Miranda.",
-    image: miranda, 
-    link: "https://stakshi301.github.io/miranda/",
-  },
+{
+  name:"Netflix Clone",
+  description: "An Netflix clone",
+  image: netflix,
+  link: "https://netflix-clone-kbzrwx96u-stakshis-projects.vercel.app/",
+}
 ];
 
 const Projects = () => {
