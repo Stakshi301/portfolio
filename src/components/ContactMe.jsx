@@ -36,7 +36,7 @@ function ContactMe() {
       <motion.h1
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 5.8, ease: "easeInOut" }}
+        transition={{ duration: 5.1, ease: "easeInOut" ,repeat: Infinity, repeatDelay: 2}}
         className="text-3xl font-bold text-blue-400"
       >
         Let's
@@ -44,7 +44,7 @@ function ContactMe() {
       <motion.h1
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 5.8, ease: "easeInOut" }}
+        transition={{ duration: 5.1, ease: "easeInOut" ,repeat: Infinity, repeatDelay: 2}}
         className="text-3xl font-bold text-blue-400 ml-2"
       >
         Connect
