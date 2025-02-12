@@ -24,13 +24,13 @@ const projects = [
     name: "Pixo",
     description: "A Pinterest inspired app.",
     image: pixo, 
-    link: "https://pixo-oppmhdugl-stakshis-projects.vercel.app/", 
+    link: "https://pixo-seven.vercel.app/", 
   },
 {
   name:"Netflix Clone",
   description: "An Netflix clone",
   image: netflix,
-  link: "https://netflix-clone-fsnpzfl3t-stakshis-projects.vercel.app/",
+  link: "https://netflix-clone-gamma-cyan-15.vercel.app/",
 }
 ];
 
