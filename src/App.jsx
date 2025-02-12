@@ -1,8 +1,8 @@
 import Certificate from "./components/certificates";
-import Intro from "./components/intro";
 import Navbar from "./components/Navbar";
 import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
+import Intro from "./components/Intro"
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
 
       <div className="container mx-auto w-full px-5">
         <Navbar />
-        <Intro />
+        <Intro/>
         <Certificate />
         <ContactMe/>
         <Footer/>
