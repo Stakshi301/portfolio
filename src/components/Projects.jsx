@@ -30,7 +30,7 @@ const projects = [
   name:"Netflix Clone",
   description: "An Netflix clone",
   image: netflix,
-  link: "https://netflix-clone-kbzrwx96u-stakshis-projects.vercel.app/",
+  link: "https://netflix-clone-fsnpzfl3t-stakshis-projects.vercel.app/",
 }
 ];
 
