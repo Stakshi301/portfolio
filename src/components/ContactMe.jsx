@@ -65,21 +65,21 @@ function ContactMe() {
               <label htmlFor="name" className="flex items-center gap-2 text-lg">
                 <BsPerson /> Name
               </label>
-              <input type="text" name="user_name" required className="p-2 mt-1 rounded-md bg-gray-800 border border-gray-600 focus:border-blue-400 outline-none" />
+              <input type="text" name="user_name" required id="name" className="p-2 mt-1 rounded-md bg-gray-800 border border-gray-600 focus:border-blue-400 outline-none" />
             </div>
 
             <div className="flex flex-col">
               <label htmlFor="email" className="flex items-center gap-2 text-lg">
                 <HiOutlineMail /> Email
               </label>
-              <input type="email" name="user_email" required className="p-2 mt-1 rounded-md bg-gray-800 border border-gray-600 focus:border-blue-400 outline-none" />
+              <input type="email" name="user_email" required id="email" className="p-2 mt-1 rounded-md bg-gray-800 border border-gray-600 focus:border-blue-400 outline-none" />
             </div>
 
             <div className="flex flex-col">
               <label htmlFor="message" className="flex items-center gap-2 text-lg">
                 <BiMessageSquareDetail /> Message
               </label>
-              <textarea name="message" rows="4" required className="p-2 mt-1 rounded-md bg-gray-800 border border-gray-600 focus:border-blue-400 outline-none"></textarea>
+              <textarea name="message" rows="4" required id="message" className="p-2 mt-1 rounded-md bg-gray-800 border border-gray-600 focus:border-blue-400 outline-none"></textarea>
             </div>
 
             {/* ✅ Button Changes After Submission */}
