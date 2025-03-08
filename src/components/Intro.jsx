@@ -70,7 +70,7 @@ const Intro = () => {
     ${isDrawerOpen ? "hidden lg:!hidden" : "lg:flex lg:flex-col lg:gap-12 lg:justify-end lg:items-end lg:absolute lg:right-5"}`}
 >
 
-         <a href="./Stakshi_Resume.pdf" 
+         <a href="/Stakshi_Resume.pdf" 
           download="Stakshi_Resume.pdf">
           <AiOutlineFileText className="h-8 w-8 sm:h-9 sm:w-9 text-blue-200"/>
         </a>
