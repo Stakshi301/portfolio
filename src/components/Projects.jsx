@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import miranda from "../assets/miranda.png"
 import veganMart from "../assets/veganMart.png"
-import blinkit from "../assets/blinkit.png"
+// import blinkit from "../assets/blinkit.png"
 import netflix from "../assets/netflix.png"
 import pixo from "../assets/pixo.png"
 
@@ -22,9 +22,9 @@ const projects = [
   },
   {
     name: "Pixo",
-    description: "A Pinterest inspired app.",
+    description: " A Visual Content Posting Platform.",
     image: pixo, 
-    link: "https://pixo-seven.vercel.app/", 
+    link: "https://pixo-8v7o.onrender.com", 
   },
 {
   name:"Netflix Clone",
