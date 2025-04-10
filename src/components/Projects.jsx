@@ -28,7 +28,7 @@ const projects = [
   },
 {
   name:"DevLTops",
-  description: "Stories to Inspire ans our Courses to Empower.",
+  description: "Stories to Inspire and our Courses to Empower.",
   image: BookStore,
   link: "https://course-website-ashy.vercel.app/",
 }
