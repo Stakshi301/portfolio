@@ -1,36 +1,36 @@
 
 import { motion } from "framer-motion";
-import miranda from "../assets/miranda.png"
+import BookStore from "../assets/BookStore.png"
 import veganMart from "../assets/veganMart.png"
 // import blinkit from "../assets/blinkit.png"
-import netflix from "../assets/netflix.png"
+import DevLTops from "../assets/DevLTops.png"
 import pixo from "../assets/pixo.png"
 
 
 const projects = [
   {
-    name: "Vegan Mart",
-    description: "An e-commerce platform for vegan products.",
-    image: veganMart, 
-    link: "https://stakshi301.github.io/veganMart/", 
-  },
-  {
-    name: "Miranda Website",
-    description: "A beautifully designed webpage of Miranda.",
-    image: miranda, 
-    link: "https://stakshi301.github.io/miranda/",
-  },
-  {
     name: "Pixo",
-    description: " A Visual Content Posting Platform.",
+    description: "Pixels with Purpose.",
     image: pixo, 
     link: "https://pixo-8v7o.onrender.com", 
   },
+  {
+    name: "Book Store",
+    description: "Fuel Your Mind - Get you book from our store.",
+    image: DevLTops, 
+    link: "https://bookstorefrontend-f3gf.onrender.com/",
+  },
+  {
+    name: "Vegan Mart",
+    description: "Eat Clean. Live Green — You're Just One Step Away from Your Order",
+    image: veganMart, 
+    link: "https://stakshi301.github.io/veganMart/", 
+  },
 {
-  name:"Netflix Clone",
-  description: "An Netflix clone",
-  image: netflix,
-  link: "https://netflix-clone-gamma-cyan-15.vercel.app/",
+  name:"DevLTops",
+  description: "Stories to Inspire ans our Courses to Empower.",
+  image: BookStore,
+  link: "https://course-website-ashy.vercel.app/",
 }
 ];
 
