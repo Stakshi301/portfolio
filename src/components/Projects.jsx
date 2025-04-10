@@ -17,7 +17,7 @@ const projects = [
   {
     name: "Book Store",
     description: "Fuel Your Mind - Get you book from our store.",
-    image: DevLTops, 
+    image: BookStore, 
     link: "https://bookstorefrontend-f3gf.onrender.com/",
   },
   {
@@ -29,7 +29,7 @@ const projects = [
 {
   name:"DevLTops",
   description: "Stories to Inspire and our Courses to Empower.",
-  image: BookStore,
+  image: DevLTops,
   link: "https://course-website-ashy.vercel.app/",
 }
 ];
