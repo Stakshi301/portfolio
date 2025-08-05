@@ -1,30 +1,42 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+// import { useState } from "react";
+// import { motion, AnimatePresence } from "framer-motion";
 import Bootstrap from "../assets/Bootstrap.png";
 import cpp from "../assets/c++.png";
 import Css from "../assets/Css.png";
 import Html from "../assets/Html.png";
 import Javascript from "../assets/Javascript.png";
+import HoverExpand from "./ui/hover-expand";
 
-const certificatesArr = [Bootstrap, cpp, Css, Html, Javascript];
-const title = "Certificates".split(""); 
+const images = [Bootstrap, cpp, Css, Html, Javascript];
+//const title = "Certificates".split(""); 
 
 const Certificate = () => {
-  const [index, setIndex] = useState(0);
 
-  const nextCertificate = () => {
-    setIndex((prev) => (prev + 1) % certificatesArr.length);
-  };
 
-  const prevCertificate = () => {
-    setIndex((prev) => (prev - 1 + certificatesArr.length) % certificatesArr.length);
-  };
+  // const [index, setIndex] = useState(0);
+
+  // const nextCertificate = () => {
+  //   setIndex((prev) => (prev + 1) % certificatesArr.length);
+  // };
+
+  // const prevCertificate = () => {
+  //   setIndex((prev) => (prev - 1 + certificatesArr.length) % certificatesArr.length);
+  // };
 
   return (
 
     
-    <div className="flex flex-col items-center justify-center gap-5 mt-10 relative">
-    <motion.h2 className="text-5xl tracking-wider font-bold text-blue-500 mb-5 flex">
+    // <div className="flex flex-col items-center justify-center gap-5 mt-10 relative">
+<div>
+<HoverExpand 
+images={images}
+initialSelectedIndex={0}
+          thumbnailHeight={200}
+          modalImageSize={400}
+          maxThumbnails={11}
+          ></HoverExpand>
+
+    {/* <motion.h2 className="text-5xl tracking-wider font-bold text-blue-500 mb-5 flex">
         {title.map((letter, index) => (
           <motion.span
             key={index}
@@ -67,7 +79,7 @@ const Certificate = () => {
       >
         ❯
       </button>
-      </div>
+      </div> */}
       </div>
   );
 };
