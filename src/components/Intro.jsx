@@ -11,7 +11,7 @@ import { FaNodeJs } from "react-icons/fa";
 import stakshi from "../assets/stakshi.jpg";
 import AboutDrawer from "./AboutDrawer";
 import ScrollIndicator from "./ScrollIndicator";
-import Projects from "./Projects";
+import Projects from "./Projects"; 
 import '../index.css'
 
 
